@@ -1,0 +1,19 @@
+{{>partials/header}}
+{{>partials/fbsdk}}
+{{>partials/cover}}
+{{>partials/navigation}}
+<div class="w3-row">
+    <div id="leftBody" class="w3-col l12 m12 w3-padding">
+        <div class="w3-border w3-round-xlarge w3-padding">
+            <h6 class="w3-small-hide w3-medium-hide">Simply click on an image below for a closer look</h6>
+            <div class="clear"></div>
+            <div id="photos">
+            {{#imageArray}}
+                <img src="{{image}}" alt=""/>
+            {{/imageArray}}
+            </div>
+        </div>
+    </div>
+</div>
+{{>partials/footer}}
+{{>partials/imageViewer}}
